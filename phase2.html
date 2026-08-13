@@ -1,0 +1,291 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<!--
+PHASE 2 — EASY EDITING
+MAIN TRAINING IMAGE:
+images/phase2-training.jpg
+
+When your training videos are ready, they will live in /videos.
+-->
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>BMW Motorrad - Phase 2</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "primary": "#a1c9ff",
+                "secondary-fixed": "#e2e2e2",
+                "on-error": "#690005",
+                "secondary-fixed-dim": "#c6c6c7",
+                "surface-container-high": "#2a2a2a",
+                "on-secondary-container": "#b4b5b5",
+                "on-tertiary": "#313030",
+                "primary-fixed": "#d2e4ff",
+                "secondary-container": "#454747",
+                "primary-fixed-dim": "#a1c9ff",
+                "on-primary-container": "#d0e3ff",
+                "on-background": "#e4e2e1",
+                "on-secondary-fixed-variant": "#454747",
+                "error-container": "#93000a",
+                "on-secondary": "#2f3131",
+                "on-primary-fixed": "#001c38",
+                "tertiary-fixed-dim": "#c8c6c5",
+                "inverse-on-surface": "#303030",
+                "on-error-container": "#ffdad6",
+                "background": "#131313",
+                "on-surface": "#e4e2e1",
+                "outline": "#8b919c",
+                "tertiary": "#c8c6c5",
+                "surface-container-lowest": "#0e0e0e",
+                "on-tertiary-fixed-variant": "#474646",
+                "secondary": "#c6c6c7",
+                "on-tertiary-fixed": "#1c1b1b",
+                "surface-container-highest": "#353535",
+                "tertiary-fixed": "#e5e2e1",
+                "inverse-primary": "#0060a8",
+                "on-secondary-fixed": "#1a1c1c",
+                "surface-tint": "#a1c9ff",
+                "on-primary-fixed-variant": "#004880",
+                "primary-container": "#0066b1",
+                "error": "#ffb4ab",
+                "on-tertiary-container": "#e4e1e1",
+                "on-primary": "#00325a",
+                "tertiary-container": "#656464",
+                "surface-dim": "#131313",
+                "inverse-surface": "#e4e2e1",
+                "surface-container": "#1f2020",
+                "surface-variant": "#353535",
+                "outline-variant": "#414751",
+                "surface-bright": "#393939",
+                "surface": "#131313",
+                "surface-container-low": "#1b1c1c",
+                "on-surface-variant": "#c1c7d3"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "max-width": "1440px",
+                "base": "8px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px",
+                "gutter": "24px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Hanken Grotesk"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Hanken Grotesk"
+                ],
+                "display-lg": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg": [
+                        "Hanken Grotesk"
+                ],
+                "label-sm": [
+                        "JetBrains Mono"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "80px",
+                        {
+                                "lineHeight": "88px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        .bento-card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+        }
+        .phase-watermark {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-background/95 backdrop-blur-md sticky top-0 z-40 border-b border-outline-variant/20">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="flex items-center">
+<img alt="BMW Mark" class="h-16 md:h-20 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0uYxjoJ2tKmnTCqqjrrFe2kSfWeAmLzYgoMV9sVbXj7CZY2i8HX37S01Zc9pDP98MCzhgT0nItkgmvf6o4pPvG3wiEHztEVZX1ep1uFPCUdo205nAY_BugDykm2SHdBdKMjDh8p7zq9MerL808JI4v5DT_XmZOgRRPh0yrhA6z53YLbYJEig96oyLYkJgLctp-cg_nSjHKvqPdJ8wwwN4zQvhe1Pb8HIRUp_6poQy_ghEiQibnxfDFJsvgeTTKGHDeqI">
+</div>
+
+<div class="hidden md:flex items-center">
+<img alt="BMW Motorrad Rider Academy Logo" class="h-8 md:h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0rJJrzGwuFwE3pxKNa7CfmQ-GAWgyc69brVX6Ht4tfn0czwFujic3cs420UAGc_Yf4WyUTKelsr--9FEhnihtbRpBCfWwIZ-5CnNuSUhRchk9gN4vrc33zt4mG38VECGnwJsP1ZBdKWjx0NtSSUKA_RTseJiytsp9_cvW4EYOLNbQo8AoSxLz4Xz74a3EZ8oR4m4XIUPStYa_yYRXeXaaR07HK6LEzXzDg6Gm8SLyYtnMcX-49Q24TyGQqiBbai6t7K4">
+</div>
+</div>
+</header>
+<!-- Progress Tracker -->
+<div class="w-full bg-surface-container-highest border-b border-outline-variant/30 sticky top-[72px] md:top-[74px] z-30">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-3 flex items-center gap-4">
+<div class="text-label-sm font-label-sm text-primary">PHASE 2 / 3</div>
+<div class="flex-grow h-1 bg-surface-variant rounded-full overflow-hidden flex">
+<div class="h-full bg-primary w-2/3 glow-effect"></div>
+</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant hidden md:block">Feel Prepared for Training</div>
+</div>
+</div>
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-[80px] flex flex-col gap-[80px]">
+<!-- Hero Section -->
+<section class="relative w-full flex flex-col gap-6">
+<div class="absolute -top-12 left-0 text-[180px] font-display-lg phase-watermark leading-none select-none -z-10 opacity-30">02</div>
+<h1 class="text-headline-lg-mobile md:text-display-lg font-headline-lg-mobile md:font-display-lg text-[#ffffff] max-w-4xl">FEEL PREPARED FOR TRAINING.</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                Knowing what to expect can make your first ride feel a whole lot easier.
+            </p>
+</section>
+<!-- Bento Grid Context Area -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-base"><!-- Left Column: Large Image Card -->
+<div class="md:col-span-8 rounded-lg overflow-hidden relative min-h-[400px] md:min-h-[600px] group border border-outline-variant/20 bento-card-hover">
+<img alt="Motorrad Training Context" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/phase2-training.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-col gap-4">
+<span class="inline-flex items-center px-3 py-1 rounded-full border border-primary text-primary text-label-sm font-label-sm w-max">Context</span>
+<h2 class="text-headline-md font-headline-md text-[#ffffff]">Learn the basics of a bike</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">Immerse yourself in the supportive and structured environment where your riding journey begins.</p>
+</div>
+</div>
+<!-- Right Column: Vertical Stack -->
+<div class="md:col-span-4 flex flex-col gap-base">
+<!-- Module: What to Wear -->
+<div class="flex-1 bg-primary rounded-lg p-6 border border-outline-variant/20 flex flex-col justify-between bento-card-hover group text-on-primary shadow-[0_0_40px_rgba(161,201,255,0.1)] relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-10 text-on-primary group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">dry_cleaning</span>
+</div>
+<div class="flex flex-col gap-4 relative z-10">
+<span class="material-symbols-outlined icon-fill">apparel</span>
+<h3 class="text-headline-md font-headline-md">WHAT TO WEAR</h3>
+<p class="text-body-md font-body-md opacity-80">Guidance on clothing and equipment for maximum safety and comfort.</p>
+</div>
+<button class="mt-8 self-start flex items-center gap-2 text-label-sm font-label-sm font-bold group-hover:pl-2 transition-all">
+            Learn more <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Module: How Training Works -->
+<div class="bg-surface-container rounded-lg p-6 border border-outline-variant/20 flex flex-col gap-4 bento-card-hover group">
+<div class="flex flex-col gap-2">
+<span class="inline-flex items-center px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant text-label-sm font-label-sm w-max">Structure</span>
+<h3 class="text-headline-md font-headline-md text-[#ffffff]">HOW TRAINING WORKS</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Simple structure of guided training, step-by-step.</p>
+</div>
+<button class="w-full px-6 py-3 bg-primary text-on-primary text-label-sm font-label-sm rounded-DEFAULT hover:bg-surface-container hover:text-primary transition-colors border border-transparent hover:border-primary flex justify-center items-center gap-2">
+            Watch Video <span class="material-symbols-outlined">play_arrow</span>
+</button>
+</div>
+</div></section>
+<!-- Bottom Transition -->
+<section class="mt-[40px] flex flex-col items-center text-center gap-8 py-[40px] border-t border-outline-variant/20 relative">
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-[#ffffff]">FEELING READY?</h2>
+<a href="phase3.html" class="px-8 py-4 bg-primary text-on-primary text-label-sm font-label-sm rounded-DEFAULT hover:bg-surface-container-high hover:text-primary transition-colors flex items-center gap-3 border-2 border-transparent hover:border-primary group shadow-lg shadow-primary/10 hover:shadow-primary/20">
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-2">CONTINUE TO PHASE 3</p>
+</section>
+</main>
+<!-- Footer -->
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 md:hidden bg-surface-container border-t border-outline-variant shadow-lg pb-safe">
+<a class="flex flex-col items-center justify-center text-primary font-bold hover:bg-surface-variant transition-all w-full h-full scale-95 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="motorcycle">motorcycle</span>
+<span class="text-label-sm font-label-sm">Preparation</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-all w-full h-full" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="analytics">analytics</span>
+<span class="text-label-sm font-label-sm">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-all w-full h-full" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="school">school</span>
+<span class="text-label-sm font-label-sm">Academy</span>
+</a>
+</nav>
+<div class="fixed bottom-8 left-margin-mobile md:left-margin-desktop z-50 pointer-events-none hidden md:block">
+<img alt="Make Life a Ride" class="h-16 md:h-20 object-contain opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiaDB5d6G0EJHH6MRjZ_w6_XiMfNKwb-p1PkE1EzT6FrPOR5f1UoOPWFcrxuVq_IbBVAif6yoc3xHSgPXhrz2JihL-8FPiI1VseOFZ_hw86x3JcDefyE-0z89_Cu25e6aiY2koFMc1YoYEgxI1Nt-8QLy1mq3h-0qqGdwvZdJR8QkZGJrtEBhBRb6jKeRfQJ56vJE98vgDaUvk9ZPBj_W37Ko7GR2tmD9EEz2F3H1Yan2iSv0j7K90PyJmwUplRgWRaP8">
+</div>
+
+
+
+
+</body></html>
+
+<!-- Phase 3: Remove Practical Barriers (Branded) -->

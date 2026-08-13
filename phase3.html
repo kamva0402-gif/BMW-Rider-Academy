@@ -1,0 +1,229 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<!--
+PHASE 3 — EASY EDITING
+Licence videos can be added later in /videos.
+-->
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>BMW Motorrad - Phase 3</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500&amp;family=Inter:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#a1c9ff",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-error": "#690005",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-tertiary": "#313030",
+                        "primary-fixed": "#d2e4ff",
+                        "secondary-container": "#454747",
+                        "primary-fixed-dim": "#a1c9ff",
+                        "on-primary-container": "#d0e3ff",
+                        "on-background": "#e4e2e1",
+                        "on-secondary-fixed-variant": "#454747",
+                        "error-container": "#93000a",
+                        "on-secondary": "#2f3131",
+                        "on-primary-fixed": "#001c38",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "inverse-on-surface": "#303030",
+                        "on-error-container": "#ffdad6",
+                        "background": "#131313",
+                        "on-surface": "#e4e2e1",
+                        "outline": "#8b919c",
+                        "tertiary": "#c8c6c5",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-tertiary-fixed-variant": "#474646",
+                        "secondary": "#c6c6c7",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "surface-container-highest": "#353535",
+                        "tertiary-fixed": "#e5e2e1",
+                        "inverse-primary": "#0060a8",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface-tint": "#a1c9ff",
+                        "on-primary-fixed-variant": "#004880",
+                        "primary-container": "#0066b1",
+                        "error": "#ffb4ab",
+                        "on-tertiary-container": "#e4e1e1",
+                        "on-primary": "#00325a",
+                        "tertiary-container": "#656464",
+                        "surface-dim": "#131313",
+                        "inverse-surface": "#e4e2e1",
+                        "surface-container": "#1f2020",
+                        "surface-variant": "#353535",
+                        "outline-variant": "#414751",
+                        "surface-bright": "#393939",
+                        "surface": "#131313",
+                        "surface-container-low": "#1b1c1c",
+                        "on-surface-variant": "#c1c7d3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-width": "1440px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "label-sm": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["80px", { "lineHeight": "88px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(37, 37, 37, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(142, 145, 146, 0.2);
+        }
+        .phase-watermark {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-size: 240px;
+            font-weight: 800;
+            color: transparent;
+            -webkit-text-stroke: 2px rgba(198, 198, 199, 0.1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md overflow-x-hidden" data-mode="connect">
+<!-- TopAppBar -->
+<header class="bg-background/95 backdrop-blur-md text-primary sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto transition-all">
+<div class="flex flex-col"><div class="flex items-center gap-gutter"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_WVrMwgO2q-P_USzTRElb_zlJdH_Q_q1fpBp8_eiA-JeX8T3SPbGpyO1yeKWzXMxmAf1yaHCN1jsSk-zJRSjos7UnYQWjd8wbe-6cw_gm5oR5OQYp53SfhEhvgnulcau86PJZ-sZvan9LXQdKd9u8ttC_BiIgZMptd6zDho47c22yWHLpBzwUK7hNUeUkSt0i9OLhVLQtm8Rlqf7wk9xsoLjJoZ8fxT35KTQxqXB9Uw1FFLAl6EKo-95rHOazycI5nAw" alt="BMW Mark" class="h-20 w-auto object-contain"></div></div>
+<nav class="hidden md:flex gap-gutter">
+<a class="text-primary border-b-2 border-secondary pb-1 text-label-sm font-label-sm hover:text-secondary duration-300" href="index.html"><br></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm hover:text-secondary duration-300" href="index.html"><br></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm hover:text-secondary duration-300" href="index.html"><br></a>
+</nav>
+
+<div class="flex items-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2e5xRHBHGlBKJmh9Uk3CX0iKq94dHq5KJ9dYDa21Y6s5u_mtP-JGtK7yhmBoQ0rajZODJeg7A4O4Sx4YE1c0Q4LWV9VGI3JMlJzOodksMAvCGs8voxim0axo2GtwYVbgJ6yO1wQ3BpKUY7YCSF3gHK1sLLEUVYH07I82ap-0_7k8LkOjDy4NPXCJFxAqhEnkcGjPIbJXX8Iqlmd-t_3kfV90qPzs9QFsNCOahGvtGc_yy4l8WOOuTJxht0b23DQ1x4BI" alt="Rider Academy Logo" class="h-12 w-auto object-contain"></div></header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col relative py-[40px] px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto w-full z-10">
+<!-- Background Imagery & Watermark -->
+<div class="fixed inset-0 z-0 pointer-events-none">
+<div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-luminosity" data-alt="Cinematic shot of a lone rider on a BMW GS motorcycle carving through a rugged, dusty desert trail at sunset. The atmosphere is adventurous and premium, featuring deep cinematic blacks and warm sand tones, embodying the spirit of exploration." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlv3kvFJUJAMpj_hS68K_dgWN-GNPRAaLA58QZBdl5rR5lc7B61IWt49VsLXgl-wT3WqvEDQoJOi_cnGNOt9ok5-Qh1OuMKSEJdak4bswP9wFQOw7HLjmTMPharHQQr3vNZVzfIDxXHQX-0QV8hULKYx6UdtVnHbjmkffpywRCHRDAGPjp9p-iguvfIpv5neEXpJXYcq2eOQj6QTHMUJkiWizm6_N4PWzmVkWd5yWTL0ycc8ex_TYGdA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+<div class="phase-watermark">03</div>
+</div>
+<!-- Progress Tracker -->
+<div class="w-full mb-[40px] z-10">
+<div class="flex justify-between items-end mb-base text-label-sm font-label-sm text-secondary uppercase">
+<span class="">Phase 3 / 3</span>
+<span class="">Remove Practical Barriers</span>
+</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary-fixed-dim/30 w-1/3"></div>
+<div class="h-full bg-secondary-fixed-dim/30 w-1/3"></div>
+<div class="h-full bg-secondary w-1/3 shadow-[0_0_10px_rgba(198,198,199,0.5)]"></div>
+</div>
+</div>
+<!-- Header Section -->
+<section class="mb-[80px] z-10 text-center md:text-left relative">
+<h1 class="text-display-lg font-display-lg mb-base text-white">REMOVE PRACTICAL BARRIERS</h1>
+<p class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface-variant">Know what needs to happen before you ride.</p>
+</section>
+<!-- Bento Grid Steps -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-[80px] z-10">
+<!-- Step 1 -->
+<div class="bg-secondary text-on-secondary rounded-lg p-margin-mobile flex flex-col justify-between group hover:scale-[1.02] transition-transform duration-300 shadow-lg cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-base">
+<span class="text-label-sm font-label-sm opacity-70 uppercase">Step 01</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">assignment</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-base text-white">Learner's Licence</h3>
+<p class="text-body-md font-body-md text-on-secondary-fixed-variant line-clamp-3">The foundational step. Understand the traffic rules and basic theory required to begin your practical training legally.</p>
+</div>
+<div class="mt-margin-mobile flex items-center gap-2 text-label-sm font-label-sm">
+<span class="">Expand Details</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-high border border-outline-variant rounded-lg p-margin-mobile flex flex-col justify-between group hover:scale-[1.02] transition-transform duration-300 hover:border-secondary cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-base">
+<span class="text-label-sm font-label-sm text-secondary uppercase">Step 02</span>
+<span class="material-symbols-outlined text-4xl text-on-surface" style="font-variation-settings: 'FILL' 0;">id_card</span>
+</div>
+<h3 class="text-headline-md font-headline-md mb-base text-white">Riding Licence</h3>
+<p class="text-body-md font-body-md text-on-surface-variant line-clamp-3">Translate theory into practice. Prepare for the official test to earn your full riding credentials.</p>
+</div>
+<div class="mt-margin-mobile flex items-center gap-2 text-label-sm font-label-sm text-primary group-hover:text-secondary transition-colors">
+<span class="">Expand Details</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</section><section class="glass-card rounded-xl p-margin-desktop flex flex-col items-center text-center z-10 max-w-3xl mx-auto border-t border-secondary/30 relative overflow-hidden mb-[120px]"><div class="absolute -top-10 -right-10 text-secondary/10"><span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></div><h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg mb-base relative z-10 text-white">YOU'RE ON THE RIGHT PATH.</h2><p class="text-body-lg font-body-lg text-on-surface-variant mb-[40px] relative z-10">We'll let you know when Rider Academy training opens for bookings.</p><button class="bg-primary text-on-primary hover:bg-surface-container-high hover:text-primary border border-transparent hover:border-primary transition-colors duration-300 px-8 py-4 rounded font-label-sm text-label-sm inline-flex items-center gap-2 relative z-10"><span class="">KEEP ME INFORMED</span><span class="material-symbols-outlined text-sm">arrow_forward</span></button></section>
+<!-- Completion State -->
+
+</main>
+<!-- BottomNavBar (Mobile) -->
+<div class="fixed bottom-margin-mobile md:bottom-margin-desktop left-margin-mobile md:left-margin-desktop z-50 pointer-events-none">
+  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKWcIqCpEmxvjRwWSKx1TFpynakJYalVak24yjonTUjY8ZF0_0xn9LiamLtEbDPWOAo6WhixnFjB4FHjIFlO8nDDlQurcJBjSnvsegzLKkmd5WHe8I9RRTioX0uh7RtedxWht2N6Cfz86DTbbkyTTPLWCYQyp1AVeM_IB4oDv3XMi_Q8WVooCz7xKvu68BoJD54felH0x7wHIsA4eciz8UgzqKTh2-ZU5uwsOPp1C-fBSmUWzTOIprZDI91rrStsOYleU" alt="Make Life a Ride" class="h-20 w-auto object-contain opacity-90 mix-blend-screen">
+</div><nav class="bg-surface-container text-secondary fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 md:hidden border-t border-outline-variant bg-surface-container-high shadow-lg">
+<a class="flex flex-col items-center justify-center text-secondary font-bold hover:bg-surface-variant transition-all Active: scale-95 transition-transform duration-200 p-2 rounded w-full h-full" href="index.html">
+<span class="material-symbols-outlined mb-1">motorcycle</span>
+<span class="text-label-sm font-label-sm uppercase">Preparation</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-all Active: scale-95 transition-transform duration-200 p-2 rounded w-full h-full" href="index.html">
+<span class="material-symbols-outlined mb-1">analytics</span>
+<span class="text-label-sm font-label-sm uppercase">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-all Active: scale-95 transition-transform duration-200 p-2 rounded w-full h-full" href="index.html">
+<span class="material-symbols-outlined mb-1">school</span>
+<span class="text-label-sm font-label-sm uppercase">Academy</span>
+</a>
+</nav>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
+
+<!-- Phase 1: Imagine Yourself Riding (Branded) -->

@@ -1,0 +1,273 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<!--
+BMW RIDER ACADEMY — EASY EDITING
+Images are kept in /images.
+To change an image, replace the matching file and keep its filename.
+-->
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>BMW Motorrad Rider Academy - Preparation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-error-container": "#ffdad6",
+                "on-secondary-container": "#b4b5b5",
+                "primary-fixed-dim": "#a1c9ff",
+                "inverse-on-surface": "#303030",
+                "on-tertiary": "#313030",
+                "surface-container": "#1f2020",
+                "inverse-surface": "#e4e2e1",
+                "error": "#ffb4ab",
+                "secondary-fixed-dim": "#c6c6c7",
+                "on-tertiary-container": "#e4e1e1",
+                "on-background": "#e4e2e1",
+                "surface-variant": "#353535",
+                "on-surface": "#e4e2e1",
+                "inverse-primary": "#0060a8",
+                "outline": "#8b919c",
+                "on-secondary": "#2f3131",
+                "surface-container-low": "#1b1c1c",
+                "surface-container-lowest": "#0e0e0e",
+                "on-tertiary-fixed-variant": "#474646",
+                "error-container": "#93000a",
+                "on-primary-fixed": "#001c38",
+                "on-secondary-fixed": "#1a1c1c",
+                "background": "#131313",
+                "on-tertiary-fixed": "#1c1b1b",
+                "on-primary-container": "#d0e3ff",
+                "surface-container-highest": "#353535",
+                "primary-fixed": "#d2e4ff",
+                "primary": "#a1c9ff",
+                "surface-tint": "#a1c9ff",
+                "tertiary-fixed": "#e5e2e1",
+                "on-primary-fixed-variant": "#004880",
+                "secondary": "#c6c6c7",
+                "surface-bright": "#393939",
+                "on-primary": "#00325a",
+                "surface-container-high": "#2a2a2a",
+                "on-secondary-fixed-variant": "#454747",
+                "outline-variant": "#414751",
+                "secondary-fixed": "#e2e2e2",
+                "surface-dim": "#131313",
+                "surface": "#131313",
+                "tertiary-fixed-dim": "#c8c6c5",
+                "on-surface-variant": "#c1c7d3",
+                "primary-container": "#0066b1",
+                "tertiary-container": "#656464",
+                "tertiary": "#c8c6c5",
+                "on-error": "#690005",
+                "secondary-container": "#454747"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-mobile": "20px",
+                "margin-desktop": "64px",
+                "gutter": "24px",
+                "base": "8px",
+                "max-width": "1440px"
+        },
+        "fontFamily": {
+                "headline-lg": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg-mobile": [
+                        "Hanken Grotesk"
+                ],
+                "headline-md": [
+                        "Hanken Grotesk"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "label-sm": [
+                        "JetBrains Mono"
+                ],
+                "display-lg": [
+                        "Hanken Grotesk"
+                ]
+        },
+        "fontSize": {
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "display-lg": [
+                        "80px",
+                        {
+                                "lineHeight": "88px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        html { scroll-behavior: smooth; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 1; }
+        .cinematic-overlay { background: linear-gradient(180deg, rgba(15,15,15,0.2) 0%, rgba(15,15,15,0.8) 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col" data-mode="connect">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<a class="h-16 md:h-24 block hover:opacity-80 transition-opacity" href="#">
+<img alt="BMW Motorrad Rider Academy" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3LQwaGU7ZgnY1lv9ito9n6ALKwaK0bg4u3svO2AVXbze5115A2zHdew1TYr17ftuwTr-G_d4NjGMz34LTPfPfb3ITBs8lie9H8KiNdXxCusG1RYoNHyT8vG3dBeByZxiQAacrq6MvCWUWYkQQuTQJNCT4oXEHQxUYOk_RRb-lLRg593WvqiRtB5HO2gFYZ9zXBbejIXo_EzWlxt6OnVIYAkIhiuyeqTS2JR_8ObyJC1Y96QDNpBfpphBhyeS4FaoylCw">
+</a>
+
+<div class="flex items-center"><img alt="Rider Academy" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATpXLezKCLpViyFqlDYB0bNimLFXmkfk0hImN1P33-7DQ_w3VXdQzMLAvUKHpXLWYyVVHOWmY5RDjunYly6OsbVifM-_vQkd680DXx2oF70tdal1xMbSHkfv_z_OQ1itOah-Op27qaO0MMXZrh0oGKd6weZSFMNljB7JgA39jBNXsHN_0X1SPh08CGXdH6K99CEFKeRYa1GJ7k1emgkuW6T-F6jh6kBy1th8VHuchrCik0E56j7T9rRCE5AYtpGC5kdcU"></div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pb-margin-desktop md:pb-0 md:pb-margin-desktop pb-24">
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden pt-20">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full" data-alt="A cinematic, wide-angle shot of a BMW adventure motorcycle riding through a rugged desert landscape at sunset. The lighting is dramatic, warm, and cinematic, emphasizing the dust kicked up by the rear tire. The mood is adventurous, confident, and premium. The rider is fully geared, representing the aspiration of learning to ride." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuB17ccVOcCqxDMv-OpvNpV6afEIlur5EgMkGeCo9ey_xqJ3zMadh_kXS84bGrMh0R_AHwHgD5HBQHgvrX2N42lhdzIwpv5kbqh1mrGzCmslELS4bXJpnsfkifeLypNbcJjUrBYIE6h0GHtzAFg8blloIMG6liY4rLU2rQUQM7LG2df8Z7p-NpwQN5LcTSu0ovFQlUDy8MzQDefoxBXg60HCjKbVsxLw8CHAb5iDjcSqGdd-pWF4qt3kSw&quot;);"></div>
+<div class="absolute inset-0 cinematic-overlay"></div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto flex flex-col items-center">
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-primary mb-6" style="color: rgb(255, 255, 255);">
+                    YOUR JOURNEY TO YOUR FIRST RIDE STARTS HERE.
+                </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10 max-w-2xl">
+                    Prepare yourself for the Rider Academy with a simple, step-by-step journey designed to help you feel confident, informed and ready for the road.
+                </p>
+<a class="bg-primary text-on-primary px-8 py-4 rounded font-body-md text-body-md font-semibold hover:bg-surface-container-high hover:text-primary transition-colors duration-300 shadow-lg flex items-center gap-2" href="#phases">
+                    START YOUR RIDER PREPARATION
+                    <span class="material-symbols-outlined text-sm">arrow_downward</span>
+</a>
+<p class="mt-6 text-label-sm font-label-sm text-secondary-fixed-dim tracking-widest uppercase">
+                    3 steps. One journey. Your first ride.
+                </p>
+</div>
+<!-- Progress Indicator -->
+
+</section>
+<!-- Phase Cards Section -->
+<section class="px-margin-mobile md:px-margin-desktop bg-background pt-16 md:pt-20" id="phases">
+<div class="max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Phase 1 Card -->
+<div class="bg-secondary text-on-secondary-fixed rounded-xl p-8 flex flex-col items-center text-center shadow-2xl hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group cursor-pointer border border-on-secondary-fixed/10">
+<div class="absolute -top-10 -right-10 text-display-lg font-display-lg text-on-secondary-fixed/5 select-none pointer-events-none transition-transform group-hover:scale-110 duration-500">01</div>
+<h2 class="text-headline-md font-headline-md mb-6 relative z-10" style="color: rgb(255, 255, 255);">Phase 1</h2>
+<h3 class="text-body-lg font-body-lg font-bold italic mb-8 relative z-10" style="color: rgb(255, 255, 255);">Imagine Yourself<br>Riding</h3>
+<div class="mb-10 text-on-secondary-fixed relative z-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[80px]" data-weight="fill">motorcycle</span>
+</div>
+<p class="text-body-md font-body-md mb-8 flex-grow text-on-secondary-fixed/80 relative z-10">Start by discovering the bike and the riding experience that feels right for you.</p>
+<a class="inline-block border border-on-secondary-fixed text-on-secondary-fixed px-6 py-2 rounded font-body-md text-body-md font-semibold hover:bg-on-secondary-fixed hover:text-secondary transition-colors duration-300 w-full relative z-10" href="phase1.html">
+                            EXPLORE PHASE 1
+                        </a>
+</div>
+<!-- Phase 2 Card -->
+<div class="bg-secondary text-on-secondary-fixed rounded-xl p-8 flex flex-col items-center text-center shadow-2xl hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group cursor-pointer border border-on-secondary-fixed/10">
+<div class="absolute -top-10 -right-10 text-display-lg font-display-lg text-on-secondary-fixed/5 select-none pointer-events-none transition-transform group-hover:scale-110 duration-500">02</div>
+<h2 class="text-headline-md font-headline-md mb-6 relative z-10" style="color: rgb(255, 255, 255);">Phase 2</h2>
+<h3 class="text-body-lg font-body-lg font-bold italic mb-8 relative z-10" style="color: rgb(255, 255, 255);">Feel Prepared<br>for Training</h3>
+<div class="mb-10 text-on-secondary-fixed relative z-10 group-hover:scale-110 transition-transform duration-500"><img alt="Phase 2 Icon" class="h-[80px] w-auto object-contain mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW9hrgQMXAdZFkYEe3eZGR1HsbX0Cv1btBNVYjflvuDs6RKY8p6XRki_PBOUu4v1xk9ZJwHsG-JFGsBhdx3X9Nd2kGLuWzmAZUBgQTpEp21cVi7IiSzECJPlXhoPPfW2YkLsEAyto8LhGO7qDZXgYf6KVxQ08LyHd84PXeBDEZIElUgfyZ7aeltY6lnC5t9OF1kd3gKlRpvdORK_qfrrXewdwqFgpioHD_cstYEYA8KOIn4cATnBgjOZi36xTQOnRpWiM"></div>
+<p class="text-body-md font-body-md mb-8 flex-grow text-on-secondary-fixed/80 relative z-10">Know what to expect and start building confidence before your first training experience.</p>
+<a class="inline-block border border-on-secondary-fixed text-on-secondary-fixed px-6 py-2 rounded font-body-md text-body-md font-semibold hover:bg-on-secondary-fixed hover:text-secondary transition-colors duration-300 w-full relative z-10" href="phase2.html">
+                            EXPLORE PHASE 2
+                        </a>
+</div>
+<!-- Phase 3 Card -->
+<div class="bg-secondary text-on-secondary-fixed rounded-xl p-8 flex flex-col items-center text-center shadow-2xl hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group cursor-pointer border border-on-secondary-fixed/10">
+<div class="absolute -top-10 -right-10 text-display-lg font-display-lg text-on-secondary-fixed/5 select-none pointer-events-none transition-transform group-hover:scale-110 duration-500">03</div>
+<h2 class="text-headline-md font-headline-md mb-6 relative z-10" style="color: rgb(255, 255, 255);">Phase 3</h2>
+<h3 class="text-body-lg font-body-lg font-bold italic mb-8 relative z-10" style="color: rgb(255, 255, 255);">Remove<br>Practical Barriers</h3>
+<div class="mb-10 text-on-secondary-fixed relative z-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[80px]" data-weight="fill">id_card</span>
+</div>
+<p class="text-body-md font-body-md mb-8 flex-grow text-on-secondary-fixed/80 relative z-10">Understand the practical steps you need to take before you get on the bike.</p>
+<a class="inline-block border border-on-secondary-fixed text-on-secondary-fixed px-6 py-2 rounded font-body-md text-body-md font-semibold hover:bg-on-secondary-fixed hover:text-secondary transition-colors duration-300 w-full relative z-10" href="phase3.html">
+                            EXPLORE PHASE 3
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-margin-mobile md:px-margin-desktop bg-background text-left max-w-max-width mx-auto">
+<img alt="Make Life a Ride" class="h-16 md:h-24 w-auto object-contain opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChBiEhDWZo5W8WA0xSf5QaBdUCX8Bk4wMoLu7Lsqb2dRH7ZoQxto2ejBeM7mvjwVgUxOaabcagkpBxfFlP5y1PaqexgFWXUNOFmuUzQfIt42rreo49dv2oCvFojheGEot03QTRuOyB0mwvVx7uleeGcCSVzqWrLWXcbutJyNu6oaGfAMJ6XUXAjjYl_gKIqZnjCVTqwsQ4dnej_dM53BSDJGWbsbV9f-QmZ78iEW3ZscvEQq_-Bqymnhwa7E41buFCsq0">
+</section>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 md:hidden border-t border-outline-variant bg-surface-container-high shadow-lg">
+<a class="flex flex-col items-center justify-center text-secondary font-bold hover:bg-surface-variant transition-all Active: scale-95 transition-transform duration-200 w-full h-full" href="#">
+<span class="material-symbols-outlined mb-1">motorcycle</span>
+<span class="text-label-sm font-label-sm">Preparation</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-all Active: scale-95 transition-transform duration-200 w-full h-full" href="#">
+<span class="material-symbols-outlined mb-1">analytics</span>
+<span class="text-label-sm font-label-sm">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-all Active: scale-95 transition-transform duration-200 w-full h-full" href="#">
+<span class="material-symbols-outlined mb-1">school</span>
+<span class="text-label-sm font-label-sm">Academy</span>
+</a>
+</nav>
+<!-- Footer -->
+
+
+
+
+
+
+</body></html>
