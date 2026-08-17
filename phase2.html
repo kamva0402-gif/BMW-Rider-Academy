@@ -216,16 +216,54 @@ When your training videos are ready, they will live in /videos.
             </p>
 </section>
 <!-- Bento Grid Context Area -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-base"><!-- Left Column: Large Image Card -->
-<div class="md:col-span-8 rounded-lg overflow-hidden relative min-h-[400px] md:min-h-[600px] group border border-outline-variant/20 bento-card-hover">
-<img alt="Motorrad Training Context" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="phase2-training.jpg">
-<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-8 flex flex-col gap-4">
-<span class="inline-flex items-center px-3 py-1 rounded-full border border-primary text-primary text-label-sm font-label-sm w-max">Context</span>
-<h2 class="text-headline-md font-headline-md text-[#ffffff]">Learn the basics of a bike</h2>
-<p class="text-body-md font-body-md text-on-surface-variant max-w-md">Immerse yourself in the supportive and structured environment where your riding journey begins.</p>
-</div>
-</div>
+<section class="grid grid-cols-1 md:grid-cols-12 gap-base"><!-- Learn the Basics: Clickable Video Card -->
+<a
+    class="md:col-span-8 rounded-lg overflow-hidden relative min-h-[400px] md:min-h-[600px] group border border-outline-variant/20 bento-card-hover block cursor-pointer"
+    href="https://www.youtube.com/watch?v=Ix65YMIQglw"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <img
+        alt="Learn the basics of a motorcycle"
+        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        src="phase2-training.jpg"
+    >
+
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+
+    <!-- Play Button -->
+    <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-20 h-20 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <span class="material-symbols-outlined text-[40px]" style="font-variation-settings: 'FILL' 1;">
+                play_arrow
+            </span>
+        </div>
+    </div>
+
+    <!-- Card Content -->
+    <div class="absolute bottom-0 left-0 p-8 flex flex-col gap-4">
+
+        <span class="inline-flex items-center px-3 py-1 rounded-full border border-primary text-primary text-label-sm font-label-sm w-max">
+            LEARN
+        </span>
+
+        <h2 class="text-headline-md font-headline-md text-[#ffffff]">
+            Learn the basics of a bike
+        </h2>
+
+        <p class="text-body-md font-body-md text-on-surface-variant max-w-md">
+            Get familiar with the essential parts and controls of a motorcycle before your first ride.
+        </p>
+
+        <div class="flex items-center gap-2 text-primary text-label-sm font-label-sm font-bold uppercase tracking-widest">
+            Watch video
+            <span class="material-symbols-outlined text-[20px]">
+                arrow_forward
+            </span>
+        </div>
+
+    </div>
+</a>
 <!-- Right Column: Vertical Stack -->
 <div class="md:col-span-4 flex flex-col gap-base">
 <!-- Module: What to Wear -->
